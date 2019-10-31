@@ -390,8 +390,11 @@
           <div class="code-block html">
             <code class="tx">&lt;!-- Exemplo de .dropdown estilizado como um .btn, com lista alinhada à direita. --&gt;</code>
             <pre>
-<code><span class="el">&lt;</span>div <span class="attr">class</span><span class="el">=</span><span class="value">"btn dropdown-right danger"</span><span class="el">&gt;</span></code>
-  <code><span class="el">&lt;</span>span<span class="el">&gt;</span><span class="tx">DOWN RIGHT</span><span class="el">&lt;</span>/span<span class="el">&gt;</span></code>
+<code><span class="el">&lt;</span>div <span class="attr">class</span><span class="el">=</span><span class="value">"btn dropdown-right danger"</span>
+<span class="attr">aria-haspopup</span><span class="el">=</span><span class="value">"listbox"</span>
+<span class="attr">aria-labelledby</span><span class="el">=</span><span class="value">"dropdownTitle"</span><span class="el">&gt;</span></code>
+  <code><span class="el">&lt;</span>span
+  <span class="attr">id</span><span class="el">=</span><span class="value">"dropdownTitle"</span><span class="el">&gt;</span><span class="tx">DOWN RIGHT</span><span class="el">&lt;</span>/span<span class="el">&gt;</span></code>
   <code><span class="el">&lt;</span>ul<span class="el">&gt;</span></code>
     <code><span class="el">&lt;</span>li<span class="el">&gt;</span><span class="tx">A</span><span class="el">&lt;</span>/li<span class="el">&gt;</span></code>
     <code><span class="el">&lt;</span>li<span class="el">&gt;</span><span class="tx">B</span><span class="el">&lt;</span>/li<span class="el">&gt;</span></code>
