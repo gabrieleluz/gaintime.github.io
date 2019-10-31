@@ -440,19 +440,25 @@
           <p>
             A classe de informação <code>.inform</code> foi construida para criar caixas de texto com destaque. Muito útil para textos de alerta ou aviso. Deve ser adicionada ao elemento <code>div</code>, preferencialmente, e unida a <code>.warning</code>, <code>.info</code>, <code>.success</code> ou <code>.danger</code>.
           </p>
-          <div class="inform warning">
-            <h2>Atenção!</h2>
+
+          <div class="inform warning" aria-labelledby="informTitle">
+            <h2 id="informTitle">Atenção!</h2>
             <p>
-              Este é um típico <code>.inform</code>.
+                Este é um típico <code>.inform</code>.
             </p>
             <p>
-              No <code>.inform</code> você pode ficar a vontade para usar tags de texto. :)
+            No <code>.inform</code> você pode ficar a vontade para usar tags de texto. :)
             </p>
           </div>
 
           <div class="code-block html">
-            <code><span class="el">&lt;</span>div <span class="attr">class</span><span class="el">=</span><span class="value">"inform"</span><span class="el">&gt;</code>
-            <code><span class="el">&lt;/</span>div<span class="el">&gt;</span></code>
+            <pre>
+<code><span class="el">&lt;</span>div <span class="attr">class</span><span class="el">=</span><span class="value">"inform" </span><span class="attr">aria-labelledby</span><span class="el">=</span><span class="value">"informTitle"</span><span class="el">&gt;</code>
+  <code><span class="el">&lt;</span>h2 <span class="attr">id</span><span class="el">=</span><span class="value">"informTitle"</span><span class="el">&gt;</span><span class="tx">Atenção!</span><span class="el">&lt;/</span>h2<span class="el">&gt;</span></code>
+  <code><span class="el">&lt;</span>p<span class="el">&gt;</span><span class="tx">Este é um típico .inform.</span><span class="el">&lt;/</span>p<span class="el">&gt;</span></code>
+  <code><span class="el">&lt;</span>p<span class="el">&gt;</span><span class="tx"> No .inform você pode ficar a vontade para usar tags de texto. :) </span><span class="el">&lt;/</span>p<span class="el">&gt;</span></code>
+<code><span class="el">&lt;/</span>div<span class="el">&gt;</span></code>
+            </pre>
           </div>
         </section>
         <section id="messages" class="gt-section">
